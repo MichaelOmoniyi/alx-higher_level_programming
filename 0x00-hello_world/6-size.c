@@ -2,7 +2,7 @@
 
 /**
  * main - prints out the sentence
- * return: 0 if exited properly
+ * Return: 0 if exited properly
 */
 
 int main(void)
