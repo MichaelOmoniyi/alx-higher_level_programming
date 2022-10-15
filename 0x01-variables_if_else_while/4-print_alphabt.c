@@ -8,8 +8,11 @@
 int main(void)
 {
 	char ch;
+	char exclude;
 
-	for (ch = 'a'; ch <= 'z' && ch != 'q', 'e'; ch++)
+	exclude = 'q' + 'e';
+
+	for (ch = 'a'; ch <= 'z' && ch != exclude; ch++)
 	{
 		putchar (ch);
 	}
