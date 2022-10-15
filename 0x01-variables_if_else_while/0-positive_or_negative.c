@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
 /**
  * main - execute statements
@@ -16,7 +16,7 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	elseif(n = 0)
+	else if(n = 0)
 	{
 		printf("%d is zero\n", n);
 	}
