@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - executes statement
+ * main - displays all decimal digits of base 10
+ * starting from zero starting with a newline
+ * using putchar
  * Return: 0 when succesful
 */
 
 int main(void)
 {
-	unsigned int a;
+	int a;
 
-	a = 0;
 
-	while (0 < 10)
+	for (a = 48; a < 58; a++)
 	{
 		putchar (a);
-		a++;
 	}
 	putchar ('\n');
 	return (0);
