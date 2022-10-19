@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * times_tabel - prints 9 times table
+ * times_table - prints 9 times table
  */
 
-void times_tabel(void)
+void times_table(void)
 {
 	int a, b, c;
+
 	c = a * b;
 
 	for (a = 0; a <= 0, a++)
@@ -27,7 +28,7 @@ void times_tabel(void)
 			else
 			{
 				_putchar ((c / 10) + '0');
-				_putchar ((c % 10) + '0';
+				_putchar ((c % 10) + '0');
 				if (b == 9)
 					continue;
 				_putchar (',');
