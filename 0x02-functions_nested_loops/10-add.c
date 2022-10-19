@@ -2,7 +2,8 @@
 
 /**
  * add - adds two integers and return the result
- *
+ * @a: An input parameter
+ * @b: An input parameter
  * Return: 0, when successful
  */
 
