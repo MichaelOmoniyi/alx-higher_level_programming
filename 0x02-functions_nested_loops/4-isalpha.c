@@ -15,13 +15,11 @@ int _isalpha(int c)
 	{
 		if (lower == c)
 			alpha = 1;
-		return (alpha);
 	}
 	for (upper = 'A'; upper <= 'Z'; upper++)
 	{
-		if (upper == c)
+		if (c == upper || c == lower)
 			alpha = 1;
-		return (alpha);
 	}
 	return (alpha);
 }
