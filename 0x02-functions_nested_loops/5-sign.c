@@ -8,7 +8,7 @@
 
 int print_sign(int n)
 {
-	int N = n;
+	int n = N;
 	int sign = 0;
 
 	if (N > 0)
@@ -22,7 +22,6 @@ int print_sign(int n)
 	else
 	{
 		_putchar ('0');
-		sign = 0;
 	}
 	return (sign);
 }
