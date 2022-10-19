@@ -8,12 +8,13 @@ void times_table(void)
 {
 	int a, b, c;
 
-	c = a * b;
 
 	for (a = 0; a <= 0, a++)
 	{
 		for (b = 0; b <= 0; b++)
 		{
+			c = a * b;
+
 			if ((c / 10) == 0)
 			{
 				if (b != 0)
