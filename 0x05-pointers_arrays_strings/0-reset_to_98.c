@@ -11,5 +11,5 @@ void reset_to_98(int *n)
 
 	*n = a;
 
-	printf("n=%d\n", n);
+	_putchar(n + '0');
 }
