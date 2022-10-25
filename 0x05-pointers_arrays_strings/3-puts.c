@@ -7,8 +7,12 @@
 
 void _puts(char *str)
 {
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	int i = 0;
 
-	_putchar ('str');
-	_putchar ('\n');
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }
