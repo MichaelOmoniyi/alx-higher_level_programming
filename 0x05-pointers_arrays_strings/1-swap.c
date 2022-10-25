@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
  * swap_int - swaps the values of two integers
@@ -10,12 +8,9 @@
 
 void swap_int(int *a, int *b)
 {
-	int str1;
-	int str2;
+	int swap;
 
-	*a = str1;
-	*b = str2;
-
-	strcpy(str1, str2);
-	strcpy(str2, str1);
+	swap = *a;
+	*a = *b;
+	*b = swap;
 }
