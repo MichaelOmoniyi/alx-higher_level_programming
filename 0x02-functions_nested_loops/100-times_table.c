@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_alphabet - prints the n times table
+ * print_times_table - prints the n times table
  * @n: Input character
  */
 
