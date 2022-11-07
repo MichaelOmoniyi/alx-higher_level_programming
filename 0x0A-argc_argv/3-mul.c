@@ -5,7 +5,8 @@
  * @argc: The number of arguments supplied into the program
  * @argv: Pointer to the arguments the program receives
  *
- * Return: 0 when successful
+ * Return: 0, if program receives two argument
+ * 1, if program receives one argument
  */
 
 int main(int argc, char *argv[])
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-	multi = num1 * num2
+	multi = num1 * num2;
 
 	printf("%d\n", multi);
 
