@@ -6,8 +6,8 @@
  * @argc: The number of arguments supplied into the program
  * @argv: Pointer to the arguments the program receives
  *
- * Return: 0, if program receives two argument
- * 1, if program receives one argument
+ * Return: 1, if one of the arguments contain symbols
+ * 0, if otherwise
  */
 
 int main(int argc, char *argv[])
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		for (digit = 0; argv[num][digit]; digit++)
 		{
-			if (argv[num][digits] < '0'  || argv[num][digi] > '9')
+			if (argv[num][digit] < '0'  || argv[num][digit] > '9')
 			{
 				printf("Error\n");
 				return (1);
