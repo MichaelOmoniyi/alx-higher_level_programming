@@ -13,8 +13,14 @@ int main(int argc, char *argv[])
 	int multi;
 
 	multi = argv[1] * argv[2];
-
-	printf("%d\n", multi);
+	
+	if (argv[2] == NULL)
+		printf("Error\n");
+	return (1);
+	else
+	{
+		printf("%d\n", multi);
+	}
 
 	return (0);
 }
