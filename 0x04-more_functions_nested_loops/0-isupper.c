@@ -7,16 +7,11 @@
  *
  * Return: Returns 1, if c is uppercase and 0 if otherwise.
  */
+
 int _isupper(int c)
 {
-    char ch;
-    int upper = 0;
-
-    for (ch = 'A'; ch <= "Z"; ch++)
-    {
-    if (c == ch)
-        upper = 1;
-    }
-    return (upper);
+    if (c >= 'A' && c <= 'Z')
+        return (1);
+    else
+        return (0);
 }
-
