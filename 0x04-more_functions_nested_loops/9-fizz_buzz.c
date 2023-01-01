@@ -10,31 +10,22 @@
 
 int main (void)
 {
-int i, j;
-for (i = 1; i <= 100; i++)
-{
-if (i == 100)
-{
-_putchar(i / 100 + '0');
-_putchar((i / 10) % 10 + '0');
-_putchar(i % 100 + '0');
-}
-else if (i > 9 && i < 100)
-{
-_putchar(i / 10 = '0');
-_putchar(i % 10 = '0');
-}
-else
-{
-_putchar(i + '0');
-}
+int num;
 
-if (i % 3 == 0)
-_putchar('Fizz');
-else if (i % 5 == 0)
-_putchar('Buzz');
-else (i % 3 == 0 && i % 5 == 0)
-_putchar('FizzBuzz');
+for (num = 0; num <= 100; num++)
+{
+if (num % 3 == 0 && num % 5 == 0)
+    printf("FizzBuzz");
+else if (num % 3 == 0)
+    printf("Fizz");
+else if
+    printf("Buzz");
+else
+    printf("%d", num);
+
+if (num != 100)
+    printf(" ");
 }
-_putchar('\n');
+printf("\n");
+return (0);
 }
