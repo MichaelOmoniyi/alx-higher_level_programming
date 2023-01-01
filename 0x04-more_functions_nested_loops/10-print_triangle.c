@@ -24,8 +24,8 @@ for (k = 0; k < i + 1; k++)
 {
 _putchar('#');
 }
-}
 _putchar('\n');
+}
 }
 else
 _putchar('\n');
