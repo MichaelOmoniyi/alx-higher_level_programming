@@ -8,7 +8,7 @@
  * Return: 0, when sucessful and 1 if otherwise.
  */
 
-int main (void)
+int main(void)
 {
 int num;
 
