@@ -4,7 +4,7 @@ number = random.randint(-10000, 10000)
 lnum = abs(number) % 10
 
 if number < 0:
-    number = -(number)
+    number = (number)
     lnum = -(lnum)
 
 if lnum > 5:
