@@ -5,7 +5,7 @@ lnum = abs(number) % 10
 
 if number < 0:
     number = (number)
-    lnum = (lnum)
+    lnum = -(lnum)
 
 if lnum > 5:
     string = "and is greater than 5"
