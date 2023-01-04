@@ -11,7 +11,7 @@ if lnum > 5:
     string = "and is greater than 5"
 elif lnum < 6 and lnum != 0:
     string = "and is greater than 6 and not 0"
-elif lnum == 0:
-    string = "and is greater than 5"
+else:
+    string = "and is 0"
 
 print(f"Last digit of {number} is {lnum} {string}")
