@@ -8,4 +8,7 @@ def fizzbuzz():
         elif number % 5 == 0:
             print(f"Buzz")
         else
-            print(f"{number}")
+        print(f"{number}")
+
+        if number != 100:
+            print(f" ")
