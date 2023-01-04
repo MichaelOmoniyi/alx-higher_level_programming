@@ -4,6 +4,6 @@ def print_last_digit(number):
 
     if number < 0:
         ldigit = -(ldigit)
-        print("{ldigit}")
+        return ldigit
     else:
-        print("{ldigit}")
+        return ldigit
