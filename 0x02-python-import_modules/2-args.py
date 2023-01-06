@@ -6,11 +6,11 @@ if __name__ == "__main__":
     argc = len(sys.argv) - 1
 
     if argc == 0:
-        argumentStr += 'S.'
+        argumentStr += 's.'
     elif argc == 1:
         argumentStr += ':'
     else:
-        argumentStr += 'S:'
+        argumentStr += 's:'
     print(argumentStr.format(argc))
 
     i = 0
