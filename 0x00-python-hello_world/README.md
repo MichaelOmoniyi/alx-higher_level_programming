@@ -19,3 +19,9 @@
 9-easter_egg.py - A Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
 
 10-check_cycle.c, lists.h - A function in C that checks if a singly linked list has a cycle in it.
+
+100-write.py - A Python script that prints an exact statement using the write function.
+
+101-compile - A script that compiles a Python file.
+
+102-magic_calculation.py - A Python function that does the exact thing as a Python bytecode.
