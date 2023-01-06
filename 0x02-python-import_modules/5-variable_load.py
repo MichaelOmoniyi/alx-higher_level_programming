@@ -3,6 +3,6 @@
 if __name__ != "__main__":
     exit()
 
-from variable_load import a
+from variable_load_5 import a
 
-print("{:s}".format(a))
+print("{:d}".format(a))
