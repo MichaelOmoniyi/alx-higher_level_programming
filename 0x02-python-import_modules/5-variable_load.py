@@ -5,4 +5,4 @@ if __name__ != "__main__":
 
 from variable_load import a
 
-print(f"{a}")
+print("{:s}".format(a))
