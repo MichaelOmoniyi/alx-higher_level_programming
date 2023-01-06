@@ -3,7 +3,7 @@ import sys
 
 if __name__ == "__main__":
     argumentStr = "{:d} argument"
-    argc = len(sys.argc) - 1
+    argc = len(sys.argv) - 1
 
     if argc == 0:
         argumentStr += 'S.'
