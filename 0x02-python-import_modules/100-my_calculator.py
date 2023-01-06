@@ -16,7 +16,7 @@ elif argv[2] == '*':
     result = mul(int(argv[1]), int(argv[3]))
 elif argv[2] == '/':
     result = div(int(argv[1]), int(argv[3]))
-elif
+elif:
     print("Unknown operator. Available operators: +, -, * and /")
     exit(1)
 
