@@ -5,6 +5,6 @@ def divisible_by_2(my_list=[]):
     for i in range(len(my_list)):
         if my_list[i] % 2 == 0:
             list.append(my_list[i])
-            return (True)
+            return (list2)
         else:
             return (False)
