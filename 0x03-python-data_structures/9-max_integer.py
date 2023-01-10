@@ -3,6 +3,6 @@
 def max_integer(my_list=[]):
     my_list.sort(reverse=True)
     if len(my_list) == 0:
-        print("None")
+        return
     else:
-        print("Max: {:d}".format(my_list))
+        return (my_list[0])
