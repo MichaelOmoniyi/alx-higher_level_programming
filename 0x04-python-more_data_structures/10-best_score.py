@@ -3,7 +3,7 @@
 def best_score(a_dictionary):
     best = list(reversed(sorted(a_dictionary.values())))
     if len(a_dictionary.values()) == 0:
-        return None
+        return (None)
     else:
         for i in a_dictionary:
             if a_dictionary[i] == best[0]:
