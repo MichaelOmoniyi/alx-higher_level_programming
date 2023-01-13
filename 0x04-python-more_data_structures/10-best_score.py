@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def best_score(a_dictionary):
-    best = list(reversed(sort(a_dictionary.values())))
+    best = list(reversed(sorted(a_dictionary.values())))
     if len(a_dictionary) == 0:
         return None
     else:
