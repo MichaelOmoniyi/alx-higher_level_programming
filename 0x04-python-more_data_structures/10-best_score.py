@@ -2,7 +2,7 @@
 
 def best_score(a_dictionary):
     best = list(reversed(sorted(a_dictionary.values())))
-    if len(a_dictionary) == 0 or not isinstance(a-dictionary, dict):
+    if len(a_dictionary) == 0 or not isinstance(a_dictionary, dict):
         return (None)
     else:
         for i in a_dictionary:
