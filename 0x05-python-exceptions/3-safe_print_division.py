@@ -5,7 +5,7 @@ def safe_print_division(a, b):
 
     try:
         divide = a / b
-    except (ValueError, ZeroDivisionError):
+    except (TypeError, ZeroDivisionError):
         divide = None
     finally:
         print("Inside result: {}".format(divide))
