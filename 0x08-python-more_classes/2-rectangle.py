@@ -1,17 +1,7 @@
 #!/usr/bin/python3
 
 class Rectangle:
-    """
-    A class that defines a rectangle
-
-    Args:
-        width: Represent the width of the rectangle.
-        height: Represent the height of the rectagle.
-
-    Raise:
-        TypeError: Raises error if value not an integer.
-        ValueError: Raises error if value less than 0.
-    """
+    """A class that defines a rectangle"""
 
     def __init__(self, width=0, height=0):
         """Initialise the Rectangle class"""
@@ -20,7 +10,15 @@ class Rectangle:
 
     @property
     def width(self):
-        """Retrieve the width value"""
+        """Retrieve the width value
+        Args:
+            width: Represent the width of the rectangle.
+            height: Represent the height of the rectagle.
+
+        Raise:
+            TypeError: Raises error if value not an integer.
+            ValueError: Raises error if value less than 0.
+        """
         return self.__width
 
     @width.setter
