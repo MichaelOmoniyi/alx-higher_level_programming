@@ -4,23 +4,20 @@ class Rectangle:
     """A class that defines a rectangle"""
 
     def __init__(self, width=0, height=0):
-        """Initialise the Rectangle class"""
-        self.width
-        self.height
+        """Initialise the Rectangle class
+        Args:
+            width: Represents the width of the Rectangle.
+            height: Represents the height of the Rectangle.
+        Raises:
+            TypeError: If size is not an integer.
+            ValueError: If size less than 0."""
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
-        """Retrieve the width value
-        Args:
-            width: Represent the width of the rectangle.
-            height: Represent the height of the rectagle.
-
-        Raise:
-            TypeError: Raises error if value not an integer.
-            ValueError: Raises error if value less than 0.
-        """
-        self.__width = width
-        self.__height = height
+        """Retrieve the width value"""
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -47,8 +44,8 @@ class Rectangle:
 
     def area(self):
         """Returns the area of the rectangle"""
-        return (__width * __height)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """Returns the perimeter of the rectangle"""
-        return (__width * 2) + (__height * 2)
+        return (self.__width * 2) + (self.__height * 2)
