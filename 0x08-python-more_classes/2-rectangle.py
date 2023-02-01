@@ -19,7 +19,8 @@ class Rectangle:
             TypeError: Raises error if value not an integer.
             ValueError: Raises error if value less than 0.
         """
-        return self.__width
+        self.__width = width
+        self.__height = height
 
     @width.setter
     def width(self, value):
