@@ -49,7 +49,7 @@ class Rectangle:
         elif value < 0:
             raise ValueError("width must be >= 0")
         self.__height = value
-    
+ 
     def area(self):
         """ This returns the area of the rectangle"""
         return (self.__width * self.__height)
