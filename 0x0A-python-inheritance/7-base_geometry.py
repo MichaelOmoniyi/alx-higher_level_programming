@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+
+""" This is class calculates basic geometry"""
+
+
+class BaseGeometry:
+    """ This class return values for basic geometry"""
+
+    def area(self):
+        """ Raises an Exception"""
+
+        raise Exception("area() is not implemented")
+
+    def integer_validator(self, name, value):
+        """ This validate value and returns an error if value is not validated
+
+        Errors:
+            TypeError: if value is not an integer
+            ValueError: if value is less than zero
+            """
+
+        if not isinstance(value, int):
+            raise TypeError(name + " " + "must be an integer")
+        if value <= 0:
+            raise ValueError(name + " " + "must be greater than zero")
