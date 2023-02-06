@@ -74,7 +74,7 @@ class Rectangle:
                 except Exception:
                     rectangle += type(self).print_symbol
             if column < self.__height - 1:
-                    rectangle += "\n"
+                rectangle += "\n"
         return (rectangle)
 
     def __repr__(self):
