@@ -3,7 +3,7 @@
 """This module defines a file-appending function"""
 
 
-def write_file(filename="", text=""):
+def append_file(filename="", text=""):
     """This function appends a string to a text file (UTF8) and
     returns the number of characters written
     """
