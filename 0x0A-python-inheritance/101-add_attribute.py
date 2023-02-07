@@ -2,6 +2,7 @@
 
 """This module that add attribute(s) to an object"""
 
+
 def add_attribute(obj, att, value):
     """Adds attribute to a object"""
 
