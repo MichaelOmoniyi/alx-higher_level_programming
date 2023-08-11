@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""This class will be the base class for other projects in this directory"""
+"""This module will be the base class for other projects in this directory"""
 
 
 class Base:

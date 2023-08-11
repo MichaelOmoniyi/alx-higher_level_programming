@@ -47,7 +47,7 @@ class Rectangle:
         elif value < 0:
             raise ValueError("width must be >= 0")
         self.__height = value
-    
+
     def area(self):
         """ This returns the area of the rectangle"""
         return (self.__width * self.__height)
@@ -58,7 +58,7 @@ class Rectangle:
             return (perimeter)
         perimeter = (2 * self.__width) + (2 * self.__height)
         return perimeter
- 
+
     def __str__(self) -> str:
         """ This diagramatically shows a rectangle"""
         if self.__width == 0 or self.__height == 0:
