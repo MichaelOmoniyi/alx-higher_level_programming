@@ -1,5 +1,17 @@
 #!/usr/bin/python3
 
+"""divides two list element by element
+
+Args:
+    my_list_1 (list): list to be divided
+    my_list_2 (list): list to be divided
+    list_length (int): Length of new list
+
+Returns:
+    A new list with all divisions
+"""
+
+
 def list_division(my_list_1, my_list_2, list_length):
     new_list = []
     for i in range(0, list_length):

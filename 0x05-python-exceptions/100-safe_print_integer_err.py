@@ -1,6 +1,17 @@
 #!/usr/bin/python3
 import sys
 
+"""prints an integer
+
+Args:
+    value: integer to be printed
+
+Returns:
+    True, if successful
+    False, if not
+"""
+
+
 def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
