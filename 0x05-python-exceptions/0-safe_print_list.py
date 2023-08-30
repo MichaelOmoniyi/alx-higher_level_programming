@@ -9,6 +9,8 @@ Args:
 Returns:
     The number of element printed.
 """
+
+
 def safe_print_list(my_list=[], x=0):
     length = 0
 
@@ -18,6 +20,6 @@ def safe_print_list(my_list=[], x=0):
             length += 1
         except IndexError:
             print("\n{x} greater than the length of my_list")
-            break;
+            break
     print("")
     return (length)
