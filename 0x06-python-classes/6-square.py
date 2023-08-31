@@ -55,10 +55,10 @@ class Square:
         Args:
             value(tuple): Tuple for the x and y coordinates
         """
-        if not isinstance(value, tuple):
-            raise TypeError("position must be a tuple of 2 positive integers")
-        elif value[0] < 0 or value[1] < 0:
-            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value, tuple) or len(value) != 2 or\
+                all(isinstance(num, int) for num in value) or\
+                all(num < 0 for num in value):
+                    raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
