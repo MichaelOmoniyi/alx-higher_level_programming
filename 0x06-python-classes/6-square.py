@@ -15,7 +15,7 @@ class Square:
 
         self.__size = size
         self.__position = position
-   
+
     @property
     def size(self):
         """Retrieve the size attribute
@@ -38,7 +38,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-    
+
     @property
     def position(self):
         """Retrieve the position attribute
@@ -46,7 +46,7 @@ class Square:
         Returns: The postion attribute
         """
 
-        return(self.__position)
+        return (self.__position)
 
     @position.setter
     def position(self, value):
