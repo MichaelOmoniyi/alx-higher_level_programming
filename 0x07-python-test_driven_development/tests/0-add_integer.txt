@@ -1,0 +1,22 @@
+======================
+Using 0-add_integer.py
+======================
+
+This module tests the integer addition function ''add_integer(a, b=98)''.
+
+Usage
+=====
+
+''add_integer(...)''' returns the addition of its two arguments. It is 
+equivalent to the use of the ''+'' operator for numbers
+
+::
+    
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(2, 3)
+    5
+
+::
+
+    >>> add_intger(2, -3)
+    -1
