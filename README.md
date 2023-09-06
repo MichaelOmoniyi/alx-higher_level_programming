@@ -12,4 +12,4 @@ This directory contains some python projects.
 
 0x05-python-exceptions - Contains tasks on Python exceptions.
 
-0x06-python
+0x07-python-test_driven_development - More on Python testing
