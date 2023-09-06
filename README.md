@@ -11,3 +11,5 @@ This directory contains some python projects.
 0x04-python-data_structures - Contains tasks on Python data structures(set and dictionaries).
 
 0x05-python-exceptions - Contains tasks on Python exceptions.
+
+0x06-python
