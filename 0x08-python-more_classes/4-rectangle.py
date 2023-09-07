@@ -67,8 +67,8 @@ class Rectangle:
         for column in range(self.height):
             for row in range(self.width):
                 rectangle += "#"
-                if column < self.height - 1:
-                    rectangle += "\n"
+            if column < self.height - 1:
+                rectangle += "\n"
         return (rectangle)
 
     def __repr__(self):
