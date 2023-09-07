@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a function that prints names"""
 
+
 def say_my_name(first_name, last_name=""):
     """Prints first name and last name
 
@@ -14,7 +15,6 @@ def say_my_name(first_name, last_name=""):
     Return:
         The first and last name
     """
-
 
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
