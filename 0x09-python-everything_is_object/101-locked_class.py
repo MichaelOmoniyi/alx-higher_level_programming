@@ -8,4 +8,4 @@ class LockedClass:
     except if the new instance attribute is called first_name.
     """
 
-    __slot__ = ["first_name"]
+    __slots__ = ["first_name"]
