@@ -2,9 +2,9 @@
 
 """Defines a Student class"""
 
+
 class Student:
     """Student class is defined"""
-
 
     def __init__(self, first_name, last_name, age):
         """Initializes the Student class
@@ -28,6 +28,7 @@ class Student:
             attrs (list): (optional) List to be converted to dictionary"""
 
         if (isinstance(attrs, list) and all(isinstance(string, str)
-                for string in attrs)):
-            return {atr: getattr(self, atr) for atr in attrs if hasattr(self, atr)}
+                                            for string in attrs)):
+            return {atr: getattr(self, atr)
+                    for atr in attrs if hasattr(self, atr)}
         return self.__dict__
