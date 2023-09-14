@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Defines a Pascal's Triangle function"""
+
 
 def pascal_triangle(n):
     """The function returns a list of lists of
