@@ -11,6 +11,12 @@ prints the following statistics:
 
 
 def print_stats(size, status_codes):
+    """Print accumulated metrics.
+
+    Args:
+        size (int): The accumulated read file size.
+        status_codes (dict): The accumulated count of status codes.
+    """
     # Define the status codes to track
     status_codes = [200, 301, 400, 401, 403, 404, 405, 500]
 
@@ -26,12 +32,12 @@ def print_stats(size, status_codes):
             if len(parts) >= 8:
                 status_code = int(parts[-2])
                 file_size = int(parts[-1])
-            
+
                 # Update metrics
                 total_size += file_size
                 status_code_counts[status_code] += 1
                 line_count += 1
-            
+
                 # Check if it's time to print the statistics
                 if line_count % 10 == 0:
                     print("Total file size: File size:", total_size)
