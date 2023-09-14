@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 
 """ This is class calculates basic geometry"""
 
@@ -14,10 +14,14 @@ class BaseGeometry:
     def integer_validator(self, name, value):
         """ This validate value and returns an error if value is not validated
 
+        Args:
+            name (str): Attribute name
+            value (int): Attribute value
+
         Errors:
             TypeError: if value is not an integer
             ValueError: if value is less than zero
-            """
+        """
 
         if type(value) != int:
             raise TypeError("{} must be an integer".format(name))
