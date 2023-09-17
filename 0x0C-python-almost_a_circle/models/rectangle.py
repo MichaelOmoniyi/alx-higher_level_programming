@@ -110,12 +110,12 @@ class Rectangle(Base):
 
     def __str__(self):
         """Defines string representation format for the Rectangle"""
-        return f"[Rectagnle] ({self.id}) {self.x}/{self.y} - \
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - \
 {self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
         """This assigns an argument and key/value argument to  attributes"""
-        
+
         if args and len(args) != 0:
             a = 0
             for arg in args:
@@ -149,3 +149,14 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of the class"""
+
+        return ({
+                "id": self.id,
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
+                "y": self.y,
+                })
