@@ -4,6 +4,7 @@
 
 
 import json
+import turtle
 
 
 class Base:
@@ -118,3 +119,49 @@ class Base:
                 return ([cls.create(**objs) for objs in obj_dicts])
         except IOError:
             return ([])
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """Opens a window and draws all the rectangles and squares
+
+        Args:
+            list_rectangle (list): A list of the rectangle instances
+            list_squares (list): A list of the square instances
+        """
+
+        tl = turtle.Turtle()
+        tl.screen.bgcolor("#0000ff")
+        tl.pensize(4)
+        tl.shape("turtle")
+
+        tl.color("#ffffff")
+        for rectangle in list_rectangles:
+            tl.showturtle()
+            tl.up()
+            tl.goto(rectangle.x, rectangle.y)
+            tl.down()
+
+            for i in range(2):
+                tl.forward(rectangle.width)
+                tl.left(90)
+                tl.forward(rectangle.height)
+                tl.left(90)
+            tl.hideturtle()
+            tl._delay(25)
+
+        tl.color("#ffa500")
+        for square in list_squares:
+            tl.showturtle()
+            tl.up()
+            tl.goto(square.x, square.y)
+            tl.down()
+
+            for i in range(2):
+                tl.forward(square.width)
+                tl.left(90)
+                tl.forward(square.height)
+                tl.left(90)
+            tl.hideturtle()
+            tl._delay(25)
+
+        turtle.exitonclick()
