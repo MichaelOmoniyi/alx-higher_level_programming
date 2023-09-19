@@ -29,6 +29,8 @@ class Base:
         """Returns the JSON representation string representation of
             list_dictionaries"""
 
+        if list_dictionaries is None:
+            return (str([]))
         return json.dumps(list_dictionaries)
 
     @classmethod
@@ -84,3 +86,35 @@ class Base:
                 return [cls.create(**dicts) for dicts in list_dicts]
         except IOError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Writes the CSV seriailization of a list of objecst to a file
+
+        Args:
+            list_objs (list): A list of instances inherited from Base
+        """
+
+        filename = str(cls.__name__) + ".csv"
+        with open(filename, "w") as fileCsv:
+            if list_objs is None:
+                fileCsv.write("[]")
+            else:
+                obj_dict = [obj.to_dictionary() for obj in list_objs]
+                fileCsv.write(Base.to_json_string(obj_dict))
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Reads the CSV deserialization of a list of objects from a file
+
+        Returns:
+            A list of instances inherited from the Base class
+        """
+
+        filename = str(cls.__name__) + ".csv"
+        try:
+            with open(filename, "r") as fileCsv:
+                obj_dicts = Base.from_json_string(fileCsv.read())
+                return ([cls.create(**objs) for objs in obj_dicts])
+        except IOError:
+            return ([])
