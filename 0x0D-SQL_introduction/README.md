@@ -135,3 +135,27 @@ Write a script that lists all records of the table second_table of the database 
     * The database name will be passed as an argument to the mysql command
 
 [ Script Here ](./16-no_link.sql)
+
+* **17. Go to UTF8**
+Write a script that converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server.
+You need to convert all of the following to UTF8:
+    * Database hbtn_0c_0
+    * Table first_table
+    * Field name in first_table
+
+[ Script Here ](./100-move_to_utf8.sql)
+
+* **18. Temperatures #0**
+Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
+
+[ Script Here ](./101-avg_temperatures.sql)
+
+* **Temperatures #1**
+Write a script that displays the top 3 of cities temperature during July and August ordered by temperature (descending)
+
+[ Script Here ](./102-top_city.sql)
+
+* **20. Temperatures #2**
+Write a script that displays the max temperature of each state (ordered by State name).
+
+[ Script Here ](./103-max_state.sql)
