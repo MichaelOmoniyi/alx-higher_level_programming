@@ -76,7 +76,7 @@ A script that lists all the cities of California that can be found in the databa
     * The states table contains only one record where name = California (but the id can be different, as per the example)
     * Results will be sorted in ascending order by cities.id
     * The JOIN keyword not used
-    * The database name will be passed as an argument of the mysql command
+    * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./8-cities_of_california_subquery.sql)
 
@@ -85,7 +85,7 @@ A script that lists all cities contained in the database hbtn_0d_usa.
     * Each record would display: cities.id - cities.name - states.name
     * Results would be sorted in ascending order by cities.id
     * Only one SELECT statement is used.
-    * The database name will be passed as an argument of the mysql command
+    * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./9-cities_by_state_join.sql)
 
@@ -96,7 +96,7 @@ A script that lists all shows contained in hbtn_0d_tvshows that have at least on
     * Each record would display: tv_shows.title - tv_show_genres.genre_id
     * Results are sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
     * Only one SELECT statement is used
-    * The database name will be passed as an argument of the mysql command
+    * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./10-genre_id_by_show.sql)
 
@@ -106,7 +106,7 @@ A script that lists all shows contained in the database hbtn_0d_tvshows.
     * Results are sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
     * If a show doesn’t have a genre, it displays NULL
     * Only one SELECT statement is used
-    * The database name will be passed as an argument of the mysql command
+    * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./11-genre_id_all_shows.sql)
 
@@ -115,7 +115,7 @@ A script that lists all shows contained in hbtn_0d_tvshows without a genre linke
     * Each record displays: tv_shows.title - tv_show_genres.genre_id
     * Results are sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
     * Only one SELECT statement is used
-    * The database name will be passed as an argument of the mysql command
+    * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./12-no_genre.sql)
 
@@ -127,6 +127,16 @@ A script that lists all genres from hbtn_0d_tvshows and displays the number of s
     * A genre that doesn’t have any shows linked is not displayed
     * Results are sorted in descending order by the number of shows linked
     * Only one SELECT statement is used
-    * The database name will be passed as an argument of the mysql command
+    * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./13-count_shows_by_genre.sql)
+
+* **14. My genres**
+A script that uses the hbtn_0d_tvshows database to lists all genres of the show Dexter.
+    * The tv_shows table contains only one record where title = Dexter (but the id can be different)
+    * Each record displays: tv_genres.name
+    * Results are sorted in ascending order by the genre name
+    * Only one SELECT statement can be used.
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./14-my_genres.sql)
