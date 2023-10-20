@@ -100,7 +100,7 @@ A script that lists all shows contained in hbtn_0d_tvshows that have at least on
 
 [ Script Here ](./10-genre_id_by_show.sql)
 
-* **11. Genre ID for all shows**
+* **11. Genre ID for all shows:**
 A script that lists all shows contained in the database hbtn_0d_tvshows.
     * Each record displays: tv_shows.title - tv_show_genres.genre_id
     * Results are sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
@@ -110,7 +110,7 @@ A script that lists all shows contained in the database hbtn_0d_tvshows.
 
 [ Script Here ](./11-genre_id_all_shows.sql)
 
-* **12. No genre**
+* **12. No genre:**
 A script that lists all shows contained in hbtn_0d_tvshows without a genre linked.
     * Each record displays: tv_shows.title - tv_show_genres.genre_id
     * Results are sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
@@ -119,7 +119,7 @@ A script that lists all shows contained in hbtn_0d_tvshows without a genre linke
 
 [ Script Here ](./12-no_genre.sql)
 
-* **13. Number of shows by genre**
+* **13. Number of shows by genre:**
 A script that lists all genres from hbtn_0d_tvshows and displays the number of shows linked to each.
     * Each record displays: <TV Show genre> - <Number of shows linked to this genre>
     * First column is called genre
@@ -131,7 +131,7 @@ A script that lists all genres from hbtn_0d_tvshows and displays the number of s
 
 [ Script Here ](./13-count_shows_by_genre.sql)
 
-* **14. My genres**
+* **14. My genres:**
 A script that uses the hbtn_0d_tvshows database to lists all genres of the show Dexter.
     * The tv_shows table contains only one record where title = Dexter (but the id can be different)
     * Each record displays: tv_genres.name
@@ -140,3 +140,23 @@ A script that uses the hbtn_0d_tvshows database to lists all genres of the show 
     * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./14-my_genres.sql)
+
+* **15. Only Comedy:**
+A script that lists all Comedy shows in the database hbtn_0d_tvshows.
+    * The tv_genres table contains only one record where name = Comedy (but the id can be different)
+    * Each record displays: tv_shows.title
+    * Results are sorted in ascending order by the show title
+    * Only one SELECT statement is used
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./15-comedy_only.sql)
+
+* **16. List shows and genres:**
+A script that lists all shows, and all genres linked to that show, from the database hbtn_0d_tvshows.
+    * If a show doesn’t have a genre, NULL is displayed in the genre column
+    * Each record displays: tv_shows.title - tv_genres.name
+    * Results are sorted in ascending order by the show title and genre name
+    * Only one SELECT statement
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./16-shows_by_genre.sql)
