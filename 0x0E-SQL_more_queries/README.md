@@ -160,3 +160,41 @@ A script that lists all shows, and all genres linked to that show, from the data
     * The database name should be passed as an argument of the mysql command
 
 [ Script Here ](./16-shows_by_genre.sql)
+
+* **17. Not my genre:**
+A script that uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
+    * The tv_shows table contains only one record where title = Dexter (but the id can be different)
+    * Each record displays: tv_genres.name
+    * Results are sorted in ascending order by the genre name
+    * A maximum use of two SELECT statement
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./100-not_my_genres.sql)
+
+* **18. No Comedy tonight!:**
+A script that lists all shows without the genre Comedy in the database hbtn_0d_tvshows.
+    * The tv_genres table contains only one record where name = Comedy (but the id can be different)
+    * Each record displays: tv_shows.title
+    * Results are sorted in ascending order by the show title
+    * A maximum of two SELECT statement is used
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./101-not_a_comedy.sql)
+
+* **19. Rotten tomatoes:**
+A script that lists all shows from hbtn_0d_tvshows_rate by their rating.
+    * Each record displays: tv_shows.title - rating sum
+    * Results are sorted in descending order by the rating
+    * Only one SELECT statement is used
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./102-rating_shows.sql)
+
+* **20. Best genre**
+A script that lists all genres in the database hbtn_0d_tvshows_rate by their rating.
+    * Each record displays: tv_genres.name - rating sum
+    * Results are sorted in descending order by their rating
+    * Only one SELECT statement is used
+    * The database name should be passed as an argument of the mysql command
+
+[ Script Here ](./103-rating_genres.sql)
