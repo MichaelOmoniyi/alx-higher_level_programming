@@ -1,13 +1,9 @@
 #!/usr/bin/node
-const Rectangle = require('./4-rectangle');
+const SquareEx = require('./5-square.js');
 
 /* This defines an empty class Square */
-class Square extends Rectangle {
-  constructor (size) {
-    super(size, size);
-  }
-
-  charPrint (c) {
+class Square extends SquareEx {
+    charPrint (c) {
     if (c === undefined) {
       c = 'X';
     }
