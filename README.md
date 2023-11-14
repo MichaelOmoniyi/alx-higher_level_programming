@@ -31,3 +31,5 @@ This directories contains projects on Python, Python Object oriented programming
 [ 0x0E-SQL_more_queries ](./0x0E-SQL_more_queries/) - More on SQL queries.
 
 [ 0x12-javascript-warm_up ](./0x12-javascript-warm_up) - This directory contains basic javaScript scripting.
+
+[ 0x13-javascript_objects_scopes_closures ](./0x13-javascript_objects_scopes_closures) - This directory contains javaScript scripting based on classes, scopes and closures.
