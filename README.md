@@ -1,4 +1,6 @@
-This directory contains some python projects.
+# ALX Sprint 2 Projects
+
+This directories contains projects on Python, Python Object oriented programming, SQL and more. They are ALX sprint 2 projects.
 
 [ 0x00-python-hello_world ](./x00-python-hello_world/) - This contains some basic Python shell scripting.
 
@@ -24,4 +26,8 @@ This directory contains some python projects.
 
 [ 0x0C-python-almost_a_circle ](./0x0B-python-input_output/) - Involves using all gotten Pythons Object Oriented Programming knowledge to solve tasks.
 
-[ 0x0D-SQL_introduction ](./0x0D-SQL_introduction) - Contains solution to tasks on basic SQL concepts.
+[ 0x0D-SQL_introduction ](./0x0D-SQL_introduction/) - Contains solution to tasks on basic SQL concepts.
+
+[ 0x0E-SQL_more_queries ](./0x0E-SQL_more_queries/) - More on SQL queries.
+
+[ 0x12-javascript-warm_up ](./0x12-javascript-warm_up) - This directory contains basic javaScript scripting.
