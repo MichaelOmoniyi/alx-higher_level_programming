@@ -6,12 +6,12 @@ const dict = data.dict;
 const occurrences = {};
 
 Object.keys(dict).forEach(key => {
-    const occurrenceCount = dict[key];
-    if (!occurrences[occurrenceCount]) {
-        occurrences[occurrenceCount] = [key];
-    } else {
-        occurrences[occurrenceCount].push(key);
-    }
+  const occurrenceCount = dict[key];
+  if (!occurrences[occurrenceCount]) {
+    occurrences[occurrenceCount] = [key];
+  } else {
+    occurrences[occurrenceCount].push(key);
+  }
 });
 
 console.log(occurrences);
