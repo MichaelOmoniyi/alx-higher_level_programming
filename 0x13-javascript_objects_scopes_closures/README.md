@@ -58,3 +58,21 @@ This directory contains javaScript scripting based on classes, scopes and closur
 
 * [ 10-converter.js ](./10-converter.js) - Writes a function that converts a number from base 10 to another base passed as argument:
     * Prototype: exports.converter = function (base)
+
+* [ 100-map.js ](./100-map.js) - Writes a script that imports an array and computes a new array.
+    *   The script imports list from the file 100-data.js
+    *   A map is used.
+    *   A new list is created with each value equal to the value of the initial list, multipled by the index in the list
+    *   Both the initial list and the new list are printed
+
+* [ 101-sorted.js ](./101-sorted.js) - Writes a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
+    * The script must import dict from the file 101-data.js
+    * In the new dictionary:
+        * A key is a number of occurrences
+        * A value is the list of user ids
+    * Prints the new dictionary at the end
+
+* [ 102-concat.js ](./102-concat.js) - A script that concats 2 files.
+    * The first argument is the file path of the first source file
+    * The second argument is the file path of the second source file
+    * The third argument is the file path of the destination
