@@ -54,3 +54,15 @@ This directory contains Alx tasks on JavaScript and JQuery for scripting and web
 
 * [ 13-add.js ](./13-add.js): Contains a function that returns the addition of 2 integers.
     * The function is visible from outside
+
+* [ 100-let_me_const.js ](./100-let_me_const.js): This file that modifies the value of myVar to 333.
+
+* [ 101-call_me_moby.js ](./101-call_me_moby.js): This function that executes x times a function.
+    * The function must be visible from outside
+    * Prototype: function (x, theFunction)
+
+* [ 102-add_me_maybe.js ](./102-add_me_maybe.js): This function that increments and calls a function.
+    * The function must be visible from outside
+    * Prototype: function (number, theFunction)
+
+* [ 103-object_fct.js ](./103-object_fct.js): This script by adding a new function incr that increments the integer value.
