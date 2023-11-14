@@ -3,4 +3,8 @@
 If no arguments are passed to the script, print "No argument" */
 
 const args = process.argv.slice(2);
-console.log(`${args[0]}`);
+if (args.length === 0) {
+    console.log('No argument');
+} else {
+    console.log(`${args[0]}`);
+}
