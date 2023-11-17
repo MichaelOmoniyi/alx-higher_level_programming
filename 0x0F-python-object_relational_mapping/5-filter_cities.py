@@ -9,10 +9,10 @@ state = str(sys.argv[4])
 db = MySQLdb.connect("localhost", username, password, dbName)
 dbCur = db.cursor()
 dbCur.execute("""SELECT cities.id, cities.name, states.name FROM cities
-        INNER JOIN states ON states.id = cities.state_id 
+        INNER JOIN states ON states.id = cities.state_id
         ORDER BY id ASC""")
 rows = dbCur.fetchall()
-statesArr = [] #This array is created to control the output
+statesArr = []
 for row in rows:
     if row[2] == state:
         statesArr.append(row[1])
