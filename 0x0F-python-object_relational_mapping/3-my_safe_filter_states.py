@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" This script handles injection in file 2-my_filter_states.py """
 import MySQLdb
 import sys
 
