@@ -3,12 +3,12 @@
 import MySQLdb
 import sys
 
-username = str(sys.argv[1])
-password = str(sys.argv[2])
-dbName = str(sys.argv[3])
-name = str(sys.argv[4])
-tbName = "states"
 if __name__ == "__main__":
+    username = str(sys.argv[1])
+    password = str(sys.argv[2])
+    dbName = str(sys.argv[3])
+    name = str(sys.argv[4])
+    tbName = "states"
     db = MySQLdb.connect(host="localhost", user=username,
                          password=password, database=dbName)
     dbCur = db.cursor()
@@ -18,5 +18,5 @@ if __name__ == "__main__":
     for row in rows:
         if row[1] == name:
             print(row)
-cur.close()
-db.close()
+    cur.close()
+    db.close()
