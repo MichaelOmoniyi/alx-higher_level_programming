@@ -22,3 +22,5 @@ This project is based on handling requests.
 * [ 8-json_api.py ](./8-json_api.py): A Python script that takes in a letter and sends a POST request to http://0.0.0.0:5000/search_user with the letter as a parameter.
 
 * [ 10-my_github.py ](./10-my_github.py): A Python script that takes your GitHub credentials (username and password) and uses the GitHub API to display your id.
+
+* [ 100-github_commits.py ](./100-github_commits.py): A python script that list 1ist 10 commits (from the most recent to oldest) of a particular repository.
